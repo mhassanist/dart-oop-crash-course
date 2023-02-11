@@ -23,6 +23,10 @@ int add4(int a, int b, {int? c, int d = 0}) {
   return a + b + c! + d;
 }
 
+int add5({required int a, required int b, int? c, int d = 0}) {
+  return a + b + c! + d;
+}
+
 main() {
   print(add2(4, 6));
   print(add2(4, 6, 8));
@@ -30,6 +34,6 @@ main() {
 
 //Optional parameters with default values and named parameters and required parameters
 //Example
-int add5(int a, int b, {int c = 0, int d = 0, required int e}) {
+int add6(int a, int b, {int c = 0, int d = 0, required int e}) {
   return a + b + c + d + e;
 }

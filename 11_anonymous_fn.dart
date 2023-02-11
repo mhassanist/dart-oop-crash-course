@@ -1,11 +1,12 @@
-void main() {
+main() {
   const fruits = ["Apple", "Mango", "Banana", "Orange"];
-
-  fruits.forEach((fruit) {
+  Function(String) f = (fruit) {
     print(fruit);
-  });
-}
+  };
 
+  fruits.forEach(f);
+
+}
 
 double calculateInterest(double principal, double rate, double time) =>
     principal * rate * time / 100;
